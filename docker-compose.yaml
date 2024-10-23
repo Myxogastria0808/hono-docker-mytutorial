@@ -1,0 +1,10 @@
+services:
+  hono-sample:
+    container_name: hono-sample
+    image: hono-sample
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:3000"
+    tty: true
